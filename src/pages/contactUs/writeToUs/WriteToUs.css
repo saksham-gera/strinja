@@ -1,0 +1,37 @@
+.write-to-us {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.write-to-us-sticky {
+    height: 70vh;
+    position: -webkit-sticky;
+    position:sticky;
+    top: 0;
+    width: 30vw;
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 4rem;
+    margin: 1rem;
+}
+
+.description {
+    font-size: 1.25rem;
+}
+
+.write-to-us-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.write-to-us-form input {
+    width: 40vw;
+}

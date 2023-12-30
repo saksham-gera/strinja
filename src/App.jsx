@@ -1,7 +1,11 @@
+
+import { useState } from 'react'
+import Footer from './components/Footer'
 import './App.css'
 import ContactUs from './pages/contactUs/ContactUs.jsx'
 import Home from './pages/home/Home.jsx'
 import { Route , Routes } from 'react-router-dom';
+
 
 function App() {
   
@@ -13,6 +17,7 @@ function App() {
         </Routes>
       </>
     );
+
 }
 
 export default App

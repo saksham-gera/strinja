@@ -1,0 +1,15 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.lorem {
+    background-image: linear-gradient(to right,#e4ddd4,#8b7659);
+}
+
+a{
+    text-decoration: none;
+}
+
+

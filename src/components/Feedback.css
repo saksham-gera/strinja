@@ -1,0 +1,54 @@
+/* App.css or a new CSS file */
+
+
+.card {
+    margin: 10px;
+    height: 150px;
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px; /* Adjust the width as needed */
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(8, 0, 0, 0.6);
+  }
+
+  .initials {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 40px;
+    height: 50px;
+    height: max-content;
+    border-radius: 50%;
+    background-color: #3498db; /* Change the background color as desired */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2vh;
+    margin-right: 10px;
+  }
+
+  .title{
+    display: flex;
+    justify-content: baseline;
+
+  }
+  .content {
+    flex-grow: 1;
+    padding: 10px;
+    color:black;
+  }
+
+  .name {
+    font-weight: bold;
+    color:black
+  }
+  
+  .review {
+    margin-top: 5px;
+    color: black;
+  }
+  
+  

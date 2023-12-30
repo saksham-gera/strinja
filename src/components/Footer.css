@@ -1,13 +1,12 @@
 .Footer {
   background: url("../public/assets/mountains.png") bottom/100vh no-repeat fixed,
-  linear-gradient(to right, #f8e1cc, #d1b692);
+  transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
   width: 100vw;
-  position: relative;
-
+  position:relative;
+  bottom: 0;
 }
 
 .scroll-buttons{
@@ -18,30 +17,9 @@
   color:rgb(0, 0, 0);
 }
 
-.feedback-name{
-  position: absolute;
-  bottom: 65vh;
-  font-size: 45px;
-  font-style: lucida console;
-  color: black;
-}
-
-.Feedbacks {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  width: 100%;
-  position: relative;
-  top: 37%;
-}
-
 .footer-bar {
   background: rgba(0, 0, 0, 0.7); /* Adjust the alpha value for transparency */
-  position: absolute;
   bottom: 0;
-  height: 35%;
   width: 100%;
   color: #fff;
   display: flex;

@@ -1,24 +1,11 @@
 import React from "react";
 import "./Footer.css";
-import Feedback from "./Feedback.jsx";
-import { FaArrowCircleLeft } from "react-icons/fa";
-import { FaArrowCircleRight } from "react-icons/fa";
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa6";
 
 export default function Footer() {
   return (
     <>
       <div className="Footer">
-        <div className="feedback-name">feedback</div>
-        <div className="Feedbacks">
-          <FaArrowCircleLeft className='scroll-buttons' />
-
-          <Feedback initials="J" name="Joe " review="Janwine ART.." />
-          <Feedback initials="J" name="Joe " review="Janwine ART freateness fesdnoiewfowne" />
-          <Feedback initials="J" name="Joe " review="Janwine ART.." />
-          <FaArrowCircleRight className='scroll-buttons' />
-        </div>
-
         <div className="footer-bar" >
           <div className = 'description'>
             <div className="strinja-name">

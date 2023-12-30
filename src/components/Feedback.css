@@ -3,7 +3,7 @@
 
 .card {
     margin: 10px;
-    height: 150px;
+    height: 40vh;
     display: flex;
     border: 1px solid #ddd;
     border-radius: 8px;

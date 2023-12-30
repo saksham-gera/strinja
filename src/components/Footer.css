@@ -1,0 +1,111 @@
+.Footer {
+  background: url("../public/assets/mountains.png") bottom/100vh no-repeat fixed,
+  linear-gradient(to right, #f8e1cc, #d1b692);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  bottom: 40px;
+}
+
+.Footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 10%;
+  left: 0;
+  background: url("path/to/your/overlay-image.png") center/cover no-repeat;
+  opacity: 0.5;
+}
+
+.feedback-name{
+  font-size: 3em;
+  font-style: monospace;
+  color: black;
+}
+
+.Feedbacks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  left : 35%;
+  top: 125px;
+}
+
+.footer-bar {
+  background: rgba(0, 0, 0, 0.7); /* Adjust the alpha value for transparency */
+  position: absolute;
+  bottom: 0;
+  height: 35%;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.strinja-name {
+  font-size: 3em;
+  font-style: monospace;
+
+}
+
+.description{
+  margin-left: 40px;
+  width: 25vw;
+}
+
+.social-icons {
+
+  display: flex;
+  align-items: center;
+}
+
+.footer-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-bar button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 10px; /* Adjust spacing between buttons */
+}
+
+
+.social-icons a {
+  margin: 20px;
+  margin-right: 20px;
+  size: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+.icon {
+  width: 1px;
+  margin-right: 10px;
+}
+
+.social-icons a:hover {
+  color: rgb(50, 50, 50);
+}
+
+.cpyRight {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 0.8em;
+}
+
+.footer-bar button:hover {
+  text-decoration: underline;
+}

@@ -5,6 +5,8 @@ import './App.css'
 import ContactUs from './pages/contactUs/ContactUs.jsx'
 import Home from './pages/home/Home.jsx'
 import { Route , Routes } from 'react-router-dom';
+import Aboutus from './pages/aboutUs/Aboutus.jsx'
+
 
 
 function App() {
@@ -14,6 +16,7 @@ function App() {
         <Routes >
           <Route path='/' element={<Home />}></Route>
           <Route path='/contactus' element={<ContactUs />}></Route>
+          <Route path='/about' element={<Aboutus/>}></Route>
         </Routes>
       </>
     );

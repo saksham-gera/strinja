@@ -4,11 +4,6 @@ import React, { useState } from 'react';
 import './Feedback.css';
 
 const Feedback = ({ initials, name, review }) => {
-  const [likes, setLikes] = useState(0);
-
-  const handleLike = () => {
-    setLikes(likes + 1);
-  };
 
   return (
     <div className="card">

@@ -2,18 +2,15 @@ import React from 'react'
 import Header from './header/Header'
 import "./Home.css";
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import Footer from '../../components/Footer';
+import FeedbackComponent from '../../components/FeedbackComponent';
 
 export default function Home() {
     return (
         <div className='home'>
-            
-            <Parallax pages={3}>
+            <Parallax pages={4} style={{backgroundColor:"#a1866a"}}>
                 <ParallaxLayer >
                     <Header />
-                </ParallaxLayer>
-                <ParallaxLayer offset={1} speed={0.5} style={{height:"200vh",width:"100vw"}}> 
-                    <div className="div2" style={{backgroundImage:"url('https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_1/996648/IMG_2973_btyu0t.jpg')"}}></div>
-                    <div className="div3" style={{backgroundImage:"url('https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_1/996648/IMG_1824_a1oavz.jpg')"}}></div>
                 </ParallaxLayer>
                 <ParallaxLayer offset={1} >
                     <div className="textLayer">
@@ -25,11 +22,16 @@ export default function Home() {
                         </div>
                     </div>
                 </ParallaxLayer>
-                        
-                 {/* <ParallaxLayer> 
-
-                </ParallaxLayer>  */}
+                <ParallaxLayer offset={1} speed={0.5} style={{height:"200vh",width:"100vw"}}> 
+                    <div className="div2" style={{backgroundImage:"url('https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_1/996648/IMG_2973_btyu0t.jpg')"}}></div>
+                    <div className="div3" style={{backgroundImage:"url('https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_1/996648/IMG_1824_a1oavz.jpg')"}}></div>
+                </ParallaxLayer>
+                <ParallaxLayer offset={3} style={{backgroundColor:"#a1866a"}}>
+                    <FeedbackComponent />
+                    <Footer />
+                </ParallaxLayer>
             </Parallax>
+            
         </div>
     )
 }

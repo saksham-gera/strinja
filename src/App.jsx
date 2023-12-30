@@ -1,6 +1,3 @@
-
-import { useState } from 'react'
-import Footer from './components/Footer'
 import './App.css'
 import ContactUs from './pages/contactUs/ContactUs.jsx'
 import Home from './pages/home/Home.jsx'

@@ -1,17 +1,23 @@
+
 import { useState } from 'react'
-import reactLogo from '../public/assets/react.svg'
-import viteLogo from '../public/assets/vite.svg'
-import './App.css'
 import Footer from './components/Footer'
+import './App.css'
+import ContactUs from './pages/contactUs/ContactUs.jsx'
+import Home from './pages/home/Home.jsx'
+import { Route , Routes } from 'react-router-dom';
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
-    <>
-      <Footer />
-    </>
-  )
+      <>
+        <Routes >
+          <Route path='/' element={<Home />}></Route>
+          <Route path='/contactus' element={<ContactUs />}></Route>
+        </Routes>
+      </>
+    );
+
 }
 
 export default App

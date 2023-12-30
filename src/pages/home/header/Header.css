@@ -1,0 +1,55 @@
+.header {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bg-gif {
+    position: absolute;
+    z-index: -1;
+    filter: blur(8px); 
+    -webkit-filter: blur(8px);
+    background-image: url("https://i.makeagif.com/media/5-27-2016/Pj6IqT.gif");
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.black-overlay {
+    position: absolute;
+    z-index: 0;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    opacity: 50%;
+}
+
+.header-text {
+    position: relative;
+    z-index: 3;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Spectral', serif;
+    font-size: 12rem;
+    margin: 0;
+    padding: 0;
+}
+
+.header-subcontent {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}

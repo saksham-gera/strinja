@@ -1,0 +1,18 @@
+.nav-bar {
+    width: 100vw;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar img{
+    margin: 5px;
+    width: 50px;
+    object-fit: contain;
+}
+
+.spacer {
+    width: auto;
+}

@@ -1,0 +1,15 @@
+.contact-box {
+    width: 25vw;
+    margin: 20px;
+}
+
+.contact-box-heading {
+    color: white;
+    opacity: 70%;
+    font-size: 1rem;
+}
+
+.contact-box-text {
+    color: white;
+    font-size: 1.5rem;
+}

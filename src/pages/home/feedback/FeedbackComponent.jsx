@@ -1,6 +1,5 @@
 import "./FeedbackComponent.css";
 import { FaArrowCircleLeft } from "react-icons/fa";
-import { FaArrowCircleRight } from "react-icons/fa";
 import React from 'react'
 import FeedbackCard from "./FeedbackCard";
 

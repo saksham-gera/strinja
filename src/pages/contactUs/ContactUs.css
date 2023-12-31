@@ -1,4 +1,5 @@
 .contact-us {
     display: flex;
     flex-direction: column;
+    background-color: #a1866a;
 }

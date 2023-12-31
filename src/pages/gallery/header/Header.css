@@ -1,0 +1,19 @@
+.gallery-header {
+    display: flex;
+    width: 100vw;
+}
+
+.gallery-header-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    background-image: url('https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_auto/996648/watercolor_texture_red_by_acg723-d65on26_h2tzka.jpg');
+}
+
+.gallery-header-text {
+    width: 60vw;
+    color: white;
+    font-size: 2rem;
+}

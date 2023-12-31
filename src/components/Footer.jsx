@@ -7,32 +7,32 @@ export default function Footer() {
     <>
       <div className="Footer">
         <div className="footer-bar" >
-          <div className = 'description'>
+          <div className='description'>
             <div className="strinja-name">
-              strinja
+              Strinja
             </div>
-            <p> lorem ipsum asds asdsfdsf asdsadd asdasdas asdasdad</p>
+            <p>Threaded elegance, where color and precision intertwine gracefully.</p>
 
             <div className="social-icons">
               <a className='icon' href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-              <FaInstagram />
+                <FaInstagram />
               </a>
               <a className='icon' href="https://www.Linkedin.com/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin />
+                <FaLinkedin />
               </a>
               <a className='icon' href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
-              <FaYoutube />
+                <FaYoutube />
               </a>
               <a className='icon' href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-              <FaFacebook />
+                <FaFacebook />
               </a>
 
-              <span class="cpyRight">
-                 &copy; www.strinja.com All Rights Reserved
-              </span>
-          </div>
 
-        </div>
+            </div>
+            <span class="cpyRight">
+              &copy; www.strinja.com All Rights Reserved
+            </span>
+          </div>
 
 
           <div className="footer-buttons">

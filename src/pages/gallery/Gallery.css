@@ -1,0 +1,20 @@
+.gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-bg {
+    position: fixed;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_auto/996648/watercolor_texture_red_by_acg723-d65on26_h2tzka.jpg');
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+.gallery h3 {
+    margin: 10vh 20vh;
+    font-size: 3rem;
+    color: white;
+}

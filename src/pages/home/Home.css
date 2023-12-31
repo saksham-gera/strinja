@@ -1,39 +1,51 @@
 .home {
+    user-select: none;
     display: flex;
     flex-direction: column;
     background-color: #a1866a;
 }
 
-.div1 {
+.div1 ,.div2 , .div3, .div4 {
     height: 100vh;
     width: 50vw;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+
+.div1 , .div4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: #a1866a;
 }
 
 .div2 {
-    height: 140vh;
-    width: 50vw;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     margin-left: 50vw;
 }
 
-.div3 {
-    height: 140vh;
-    width: 50vw;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.div4 {
+    margin-left:50vw;
 }
 
-.div4 {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    width: 50vw;
-    margin-left:50vw;
+.window-component {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.window-text {
+    width: 80vw;
+    height: 30vh;
+}
+
+.feedback-footer {
+    background-color: #a1866a;
 }

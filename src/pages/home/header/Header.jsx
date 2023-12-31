@@ -1,4 +1,4 @@
-import NavBar from "../../../components/navBar/navBar";
+import NavBar from "../../../components/navBar/NavBar";
 import "./Header.css";
 
 export default function Header() {
@@ -11,11 +11,10 @@ export default function Header() {
                 <div className="header-content">
                     Strinja
                     <div className="header-subcontent">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, ratione?
-                    </div>
+                        String art: a harmonious fusion of precision and creativity, where threads dance in vibrant symphony, weaving tales that captivate the soul.                    </div>
                 </div>
             </div>
-            
+
         </div>
     );
 }

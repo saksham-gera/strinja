@@ -3,7 +3,7 @@ import Header from './header/Header'
 import "./Home.css";
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import Footer from '../../components/Footer';
-import FeedbackComponent from '../../components/feedback/FeedbackComponent';
+import FeedbackComponent from './feedback/FeedbackComponent';
 
 export default function Home() {
     return (
@@ -26,7 +26,16 @@ export default function Home() {
                     <div className="div2" style={{backgroundImage:"url('https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_1/996648/IMG_2973_btyu0t.jpg')"}}></div>
                     <div className="div3" style={{backgroundImage:"url('https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_1/996648/IMG_1824_a1oavz.jpg')"}}></div>
                 </ParallaxLayer>
-                <ParallaxLayer offset={3} style={{backgroundColor:"#a1866a"}}>
+                <ParallaxLayer offset={3} style={{height:"100vh",width:"100vw",backgroundAttachment:"fixed",backgroundRepeat:"no-repeat",backgroundPosition:"center",backgroundSize:"cover",backgroundImage:"url('https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_1/996648/IMG_2973_btyu0t.jpg')"}}>
+                    <div style={{height:"100vh",width:"100vw"}}>
+                        
+                    </div>
+                </ParallaxLayer>
+                
+                <ParallaxLayer offset={3} style={{height:"100vh", width:"100vw", backgroundColor:"black", opacity:"60%"}}>
+
+                </ParallaxLayer>
+                <ParallaxLayer offset={4} style={{backgroundColor:"#a1866a"}}>
                     <FeedbackComponent />
                     <Footer />
                 </ParallaxLayer>

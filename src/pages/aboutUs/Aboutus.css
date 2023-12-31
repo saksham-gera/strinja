@@ -1,5 +1,125 @@
-/* Aboutus.css */
+
 .about-us {
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
   height: 100vh;
-  background-color: rgb(87, 41, 41);
+  width: 100vw;
+}
+
+.images{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 00vh;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+.img{
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  right: 50vw;
+  width: 50vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./assets/png.png");
+  animation:fadeInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1.5s;
+}
+
+.img2{
+  position: absolute;
+  left:50vw;
+  z-index: -1;
+  height: 100vh;
+  width: 50vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./assets/png2.png");
+  animation:fadeInUp; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1.5s;
+}
+.blur{
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.4)
+}
+.text{
+  margin-left: 60px;
+  position: relative;
+  top:5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  width: 100vw;
+
+}
+
+.title{
+  display: flex;
+  color: white;
+  width: 100vw;
+  font-size: 3em;
+  font-family: Geneva, Tahoma, sans-serif,monospace;
+}
+
+.writing{
+  color: white;
+  width: 100vw;
+  font-size:6em;
+  font-family: Geneva,sans-serif, sans-serif,monospace;
+}
+
+.mis{
+  display: flex;
+  font-family: Geneva,sans-serif, sans-serif,monospace;
+  color: white;
+  height: 55vh;
+  background: #373131;
+  animation:fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3.5s;
+}
+
+.mis-header{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start ;
+  width: fit-content;
+  height: fit-content;
+  rotate: -90deg;
+  font-size: 3em;
+  font-family: Geneva,sans-serif, sans-serif,monospace;
+  top:14vh;
+  right: 8vw;
+}
+
+.mis-title{
+  position: relative;
+  font-size: 2em;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+.mis-writing{
+  position: relative;
+  font-size: 0.7em;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+.mis-body{
+  position: relative;
+  display: flex;
+  right:10vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 1.6em;
 }

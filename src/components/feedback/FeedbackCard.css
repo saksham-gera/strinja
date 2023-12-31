@@ -1,0 +1,36 @@
+.feedback-card {
+    margin: 2.5vh 1vw;
+    width: 22vw;
+    border-radius: 1rem;
+    transition: all 0.7s;
+}
+
+.feedback-card:hover {
+    transform: scale(1.1);
+}
+
+.feedback-text {
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    padding: 5vh 1vw;
+    opacity: 70%;
+    color: white;
+}
+
+.icon {
+    font-size:x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid white;
+}
+
+.feedback-card h3{
+    margin: 1rem 0;
+}
+

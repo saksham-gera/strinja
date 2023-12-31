@@ -3,12 +3,12 @@ import Header from './header/Header'
 import "./Home.css";
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import Footer from '../../components/Footer';
-import FeedbackComponent from '../../components/FeedbackComponent';
+import FeedbackComponent from '../../components/feedback/FeedbackComponent';
 
 export default function Home() {
     return (
         <div className='home'>
-            <Parallax pages={4} style={{backgroundColor:"#a1866a"}}>
+            <Parallax pages={5} style={{backgroundColor:"#a1866a"}}>
                 <ParallaxLayer >
                     <Header />
                 </ParallaxLayer>

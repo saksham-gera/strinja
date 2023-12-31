@@ -1,4 +1,3 @@
-import NavBar from "../../../navBar/navBar";
 import ContactBox from "./ContactBox";
 import "./Header.css";
 import React from 'react'
@@ -6,7 +5,8 @@ import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
-import NavButton from "../../../navBar/navButtons/navButton/NavButton";
+import NavBar from "../../../components/navBar/navBar";
+import NavButton from "../../../components/navBar/navButtons/navButton/NavButton";
 
 export default function Header() {
   return (

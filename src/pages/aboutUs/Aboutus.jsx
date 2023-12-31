@@ -1,6 +1,6 @@
 import React from 'react'
-import NavBar from '../../navBar/navBar'
 import './Aboutus.css'
+import NavBar from '../../components/navBar/navBar';
 
 export default function Aboutus() {
   return (

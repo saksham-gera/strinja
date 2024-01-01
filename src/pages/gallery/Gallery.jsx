@@ -9,7 +9,7 @@ export default function Gallery() {
     <div className="gallery">
         <div className="gallery-bg"></div>
         <Header />
-        <h3>Lets Have A Look!</h3>
+        <div className="gallery-heading">Lets Have A Look!</div>
         <GalleryImages />
         <Footer />
     </div>

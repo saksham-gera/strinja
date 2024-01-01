@@ -7,14 +7,6 @@
   width: 100vw;
 }
 
-.scroll-buttons{
-  height: 30px;
-  width: 30px;
-  margin-right: 30px;
-  margin-left: 30px;
-  color:rgb(0, 0, 0);
-}
-
 .footer-bar {
   background: rgba(0, 0, 0, 0.7); /* Adjust the alpha value for transparency */
   bottom: 0;
@@ -23,22 +15,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 0px 20px;
 }
 
 .strinja-name {
   font-size: 3em;
   font-style: monospace;
-
 }
 
 .description{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
   margin-left: 40px;
   width: 25vw;
 }
 
 .social-icons {
-
   display: flex;
   align-items: center;
 }
@@ -56,11 +49,8 @@
   margin-right: 10px; /* Adjust spacing between buttons */
 }
 
-
 .social-icons a {
   margin: 20px;
-  margin-right: 20px;
-  /* size: 1rem; */
   color: #fff;
   text-decoration: none;
 }
@@ -83,4 +73,43 @@
 
 .footer-bar button:hover {
   text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+
+  .Footer {
+    background-size: 50vh;
+  }
+
+  .footer-bar{
+    padding: 10px;
+  }
+
+  .strinja-name {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  .description {
+    width: 50vw;
+    margin-left: 10px;
+  }
+
+  .description p {
+    font-size: 0.75rem;
+  }
+
+  .icon {
+    font-size: 1.25rem;
+  }
+
+  .social-icons {
+    align-items: normal;
+  }
+
+  .social-icons a {
+    margin: 0;
+    margin-right: 10px;
+  }
 }

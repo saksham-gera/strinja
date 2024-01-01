@@ -22,3 +22,18 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+@media (max-width: 600px) {
+
+    .feedback-component-child {
+        width: 90vw;
+        flex-direction: column;
+    }
+    .feedback-component-text {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .feedbacks {
+        width: 100%;
+    }
+}

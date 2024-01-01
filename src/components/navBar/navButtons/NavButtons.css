@@ -4,3 +4,9 @@
     align-items: center;
     margin: auto 3rem;
 }
+
+@media (max-width: 600px) {
+    .nav-buttons {
+        margin: auto 1rem;
+    }
+}

@@ -26,11 +26,12 @@ export default function Footer() {
               <a className='icon' href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                 <FaFacebook />
               </a>
-
-
             </div>
-            <span class="cpyRight">
-              &copy; www.strinja.com All Rights Reserved
+            <span className="cpyRight">
+              &copy; www.strinja.com 
+            </span>
+            <span className="cpyRight">
+              All Rights Reserved
             </span>
           </div>
 
@@ -40,10 +41,6 @@ export default function Footer() {
             <button>Privacy Policy </button>
             <button>Contact Us </button>
           </div>
-
-
-
-
         </div>
       </div>
     </>

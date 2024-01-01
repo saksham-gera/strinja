@@ -17,3 +17,13 @@
     color: white;
     font-size: 2rem;
 }
+
+@media (max-width: 600px) {
+    .gallery-header-text {
+        font-size: 0.75rem;
+        width: 80vw;
+    }
+    .gallery-header-bg{
+        height: 25vh;
+    }
+}

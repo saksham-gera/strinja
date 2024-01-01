@@ -1,3 +1,15 @@
 .write-to-us-form {
     margin-left: 5rem;
 }
+
+.help {
+    margin-top: 0.25rem;
+    font-size: x-small;
+}
+
+
+@media (max-width: 600px) {
+    .write-to-us-form {
+        margin-left: 0;
+    }
+}

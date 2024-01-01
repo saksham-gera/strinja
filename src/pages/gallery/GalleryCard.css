@@ -36,3 +36,8 @@
     padding: 0;
 }
 
+@media (max-width: 600px) {
+    .gallery-card {
+        width: 80vw;
+    }
+}

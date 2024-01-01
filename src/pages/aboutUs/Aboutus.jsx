@@ -8,7 +8,7 @@ export default function Aboutus() {
   return (
     <>
       <div className="about-us"> 
-
+          <div className="bg-color"></div>
           <div className="images">
             <div className="img"> </div>
             <div className="img2"> </div>

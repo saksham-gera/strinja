@@ -4,8 +4,8 @@
 
 .bg {
     position: absolute;
-    z-index: -1;
-    background-color: orangered;
+    z-index: 0;
+    background-color: #a1866a;
     height: 100vh;
     width: 100vw;
 }
@@ -15,7 +15,7 @@
     width: 100vw;
     display: flex;
     position: relative;
-    z-index: 0;
+    z-index: 1;
     justify-content: start;
     align-items: center;
 }

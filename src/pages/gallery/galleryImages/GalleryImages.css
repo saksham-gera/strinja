@@ -1,0 +1,15 @@
+.gallery-col {
+    margin: 0 2.5vw;
+    width: 22vw;
+}
+
+.gallery-container {
+    display: flex;
+}
+
+.gallery-images {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

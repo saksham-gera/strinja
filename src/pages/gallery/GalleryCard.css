@@ -1,0 +1,38 @@
+.gallery-card {
+    margin: 5vh 0;
+    width: 22vw;
+    border-radius: 1rem;
+    transition: all 0.7s;
+    cursor: pointer;
+}
+
+.gallery-card:hover {
+    transform: scale(1.1);
+}
+
+.gallery-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    width: 100%;
+    background-image: linear-gradient(to top,black,transparent);
+    /* background-color: black; */
+    background-size: contain;
+    opacity: 40%;
+    color: white;
+}
+
+.gallery-card img {
+    width: 100%;
+    object-fit: contain;
+    visibility: hidden;
+}
+
+.gallery-text h3 {
+    position: absolute;
+    bottom: 5px;
+    margin: 0;
+    padding: 0;
+}
+

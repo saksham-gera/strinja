@@ -5,14 +5,14 @@ import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
-import NavBar from "../../../components/navBar/navBar";
 import NavButton from "../../../components/navBar/navButtons/navButton/NavButton";
+import NavBar from "../../../components/navBar/NavBar";
 
 export default function Header() {
   return (
     <div className="header-contactUs">
         <div className="bg"></div>
-        <NavBar />
+        <NavBar />    
         <div className="container-full">
             <div className="container">
                 <div className="header-contactus-text">

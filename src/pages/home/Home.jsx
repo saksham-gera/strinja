@@ -14,6 +14,7 @@ export default function Home() {
             <Parallax pages={isTabletOrMobile ? 3 : 5.25} style={{ backgroundAttachment: "fixed", backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover", backgroundImage: "url('./assets/achievement-bg.jpg')" }}>
                 <ParallaxLayer factor={isTabletOrMobile ? 1.5 : 3} style={{ backgroundColor: "#eacaa8" }}>
 
+
                 </ParallaxLayer>
                 <ParallaxLayer>
                     <Header />
@@ -32,6 +33,7 @@ export default function Home() {
                     </div>
 
                 </ParallaxLayer>
+
                 
                 <ParallaxLayer offset={isTabletOrMobile ? 0.5 : 1} speed={isTabletOrMobile ? 0.0 : 0.2} style={{ height: isTabletOrMobile ? "100vh" : "200vh", width: "100vw" }}>
                     <div className="textLayer">

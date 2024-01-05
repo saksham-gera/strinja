@@ -2,7 +2,7 @@ import React from 'react'
 import './Aboutus.css'
 import 'animate.css'
 import Footer from '../../components/Footer'
-import NavBar from '../../components/navBar/navBar'
+import NavBar from '../../components/navBar/NavBar';
 
 export default function Aboutus() {
   return (
@@ -20,7 +20,7 @@ export default function Aboutus() {
           <div className="text">
             <div className='title'>About Us</div>
             <div className='writing'>Empowering change,</div>
-          <div className='writing'> inspiring progress</div>
+            <div className='writing'> inspiring progress</div>
           </div>
 
         </div>

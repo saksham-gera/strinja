@@ -3,6 +3,15 @@
 }
 
 .help {
+    margin-left: 1rem;
+
+    margin-top: 0.25rem;
+    font-size: small;
+}
+
+#help {
+    width: 73vh;
+    margin-left: 1rem;
     margin-top: 0.25rem;
     font-size: x-small;
 }

@@ -12,7 +12,8 @@ export default function Home() {
     return (
         <div className='home'>
             <Parallax pages={isTabletOrMobile ? 3 : 5.25} style={{ backgroundAttachment: "fixed", backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover", backgroundImage: "url('./assets/achievement-bg.jpg')" }}>
-                <ParallaxLayer factor={isTabletOrMobile ? 1.5 : 3} style={{ backgroundColor: "#a1866a" }}>
+                <ParallaxLayer factor={isTabletOrMobile ? 1.5 : 3} style={{ backgroundColor: "#eacaa8" }}>
+
 
                 </ParallaxLayer>
                 <ParallaxLayer>
@@ -26,9 +27,13 @@ export default function Home() {
                     </div>
                 </ParallaxLayer>
                 <ParallaxLayer offset={isTabletOrMobile ? 0.5 : 1}  style={{ height: isTabletOrMobile ? "100vh" : "200vh", width: "100vw" }}>
-                    <div className="div2" style={{ backgroundImage: "url('./assets/home1.jpg')" }}></div>
-                    <div className="div3" style={{ backgroundImage: "url('./assets/home2.jpg')" }}></div>
+                    <div className="home-images">
+                        <div className="div2" style={{ backgroundImage: "url('./assets/home1.jpg')" }}></div>
+                        <div className="div3" style={{ backgroundImage: "url('./assets/home2.jpg')" }}></div>
+                    </div>
+
                 </ParallaxLayer>
+
                 
                 <ParallaxLayer offset={isTabletOrMobile ? 0.5 : 1} speed={isTabletOrMobile ? 0.0 : 0.2} style={{ height: isTabletOrMobile ? "100vh" : "200vh", width: "100vw" }}>
                     <div className="textLayer">
@@ -44,7 +49,7 @@ export default function Home() {
                         </div>
                     </div>
                 </ParallaxLayer>
-                <ParallaxLayer offset={isTabletOrMobile ? 2 : 4} style={{ backgroundColor: "#a1866a" }}>
+                <ParallaxLayer offset={isTabletOrMobile ? 2 : 4} style={{ backgroundColor: "#eacaa8" }}>
                     <div className="feedback-footer">
                         <FeedbackComponent />
                         <Footer />

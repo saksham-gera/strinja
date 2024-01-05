@@ -14,13 +14,13 @@ export default function Footer() {
             <p>Threaded elegance, where color and precision intertwine gracefully.</p>
 
             <div className="social-icons">
-              <a className='icon' href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+              <a className='icon' href="https://www.instagram.com/strinja.shop" target="_blank" rel="noopener noreferrer">
                 <FaInstagram />
               </a>
-              <a className='icon' href="https://www.Linkedin.com/" target="_blank" rel="noopener noreferrer">
+              <a className='icon' href="https://www.linkedin.com/in/strinja-shop-b37a7628b/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin />
               </a>
-              <a className='icon' href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+              <a className='icon' href="https://www.youtube.com/@strinja" target="_blank" rel="noopener noreferrer">
                 <FaYoutube />
               </a>
               <a className='icon' href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">

@@ -9,7 +9,10 @@
     align-items: center;
     width: 100vw;
     height: 50vh;
-    background-image: url('https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_auto/996648/watercolor_texture_red_by_acg723-d65on26_h2tzka.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('./assets/gallery-bg.jpg');
 }
 
 .gallery-header-text {

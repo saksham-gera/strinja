@@ -2,6 +2,7 @@ import ContactBox from "./ContactBox";
 import "./Header.css";
 import React from 'react'
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
@@ -16,17 +17,17 @@ export default function Header() {
         <div className="container-full">
             <div className="container">
                 <div className="header-contactus-text">
-                    <div className="contactus-quote"> Let's Imagine <br /> what's possible</div>
+                    <div className="contactus-quote">Questions? Reach<br /> Out Anytime</div>
                     <div className="contact-boxes">
-                        <ContactBox heading="OUR LOCATION" text="loreavsjbc sbvjkh svkbac svhba sckhb skbadv"/>
-                        <ContactBox heading="HOW TO REACH" text="sbjbhakcf sbhjavc asbkvjhd bsahvjk bkshjavm"/>
+                        <ContactBox heading="OUR LOCATION" text="Bhabha Bhavan, SVNIT, Surat Gujarat, 395007"/>
+                        <ContactBox heading="HOW TO REACH" text="+91 92529 XXXXX Strinja@gmail.com"/>
                     </div>
                 </div>
                 <div className="social-icons">
-                    <NavButton title={<FacebookRoundedIcon />} />
-                    <NavButton title={<InstagramIcon />} />
-                    <NavButton title={<TwitterIcon />} />
-                    <NavButton title={<YouTubeIcon />} />
+                    <a href="https://www.linkedin.com/in/strinja-shop-b37a7628b/" target="_blank" rel="noopener noreferrer"><NavButton title={<LinkedInIcon />} /></a>
+                    <a href="https://www.instagram.com/strinja.shop/" target="_blank" rel="noopener noreferrer"><NavButton title={<InstagramIcon />} /></a>
+                    <a target="_blank" rel="noopener noreferrer"><NavButton title={<TwitterIcon />} /></a>
+                    <a href="https://www.youtube.com/@strinja" target="_blank" rel="noopener noreferrer"><NavButton title={<YouTubeIcon />} /></a>
                 </div>
             </div>
         </div>

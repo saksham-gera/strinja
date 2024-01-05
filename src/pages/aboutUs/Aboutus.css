@@ -1,12 +1,20 @@
 
 .about-us {
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
   height: 100vh;
   width: 100vw;
 }
 
+.bg-color {
+  background-color: #a1866a;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -10;
+  
+}
 .images{
   position: absolute;
   display: flex;
@@ -19,12 +27,10 @@
 }
 
 .img{
-  position: absolute;
-  z-index: -1;
   height: 100vh;
-  right: 50vw;
-  width: 50vw;
+  width: 50%;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   background-image: url("./assets/png.png");
   animation:fadeInDown; /* referring directly to the animation's @keyframe declaration */
@@ -32,12 +38,10 @@
 }
 
 .img2{
-  position: absolute;
-  left:50vw;
-  z-index: -1;
   height: 100vh;
-  width: 50vw;
+  width: 50%;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   background-image: url("./assets/png2.png");
   animation:fadeInUp; /* referring directly to the animation's @keyframe declaration */
@@ -45,7 +49,7 @@
 }
 .blur{
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   height: 100vh;
   width: 100vw;
   background-color: rgba(0,0,0,0.4)
@@ -53,7 +57,8 @@
 .text{
   margin-left: 60px;
   position: relative;
-  top:5vh;
+  z-index: 2;
+  /* top:5vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,6 +90,7 @@
   background: #373131;
   animation:fadeInLeft; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 3.5s;
+  margin-top: 4vh;
 }
 
 .mis-header{
@@ -122,4 +128,208 @@
   justify-content: center;
   align-items: flex-start;
   font-size: 1.6em;
+  font-family: Geneva,sans-serif, sans-serif,monospace;
+
+}
+
+.vis{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  font-family: Geneva,sans-serif, sans-serif,monospace;
+  color: white;
+  height: 55vh;
+  background: #695e5e;
+  animation:fadeInRight; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 5.5s;
+  margin-top: 4vh;
+}
+
+.vis-header{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center ;
+  width: fit-content;
+  height: fit-content;
+  rotate: -90deg;
+  font-size: 3em;
+  font-family: Geneva,sans-serif, sans-serif,monospace;
+  top:14vh;
+  left: 8vw;
+
+}
+
+.vis-title{
+  position: relative;
+  font-size: 2em;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+.vis-body{
+  position: relative;
+  display: flex;
+  margin-left: 10vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 1.6em;
+  font-family: Geneva,sans-serif, sans-serif,monospace;
+}
+
+.pas{
+  display: flex;
+  font-family: Geneva,sans-serif, sans-serif,monospace;
+  color: white;
+  height: 62vh;
+  background: #373131;
+  animation:fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 6.5s;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+.pas-header{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start ;
+  width: fit-content;
+  height: fit-content;
+  rotate: -90deg;
+  font-size: 3em;
+  font-family: Geneva,sans-serif, sans-serif,monospace;
+  top:14vh;
+  right: 8vw;
+}
+
+.pas-title{
+  position: relative;
+  font-size: 2em;
+  left:10px;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+.pas-writing{
+  position: relative;
+  font-size: 0.7em;
+  left:10px;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+.pas-body{
+  position: relative;
+  display: flex;
+  right:10vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 1.6em;
+  font-family: Geneva,sans-serif, sans-serif,monospace;
+}
+
+@media (max-width: 600px)  {
+
+  .img {
+    width: 100%;
+  }
+
+  .img2 {
+    display: none;
+  }
+
+  .blur {
+    height: 50vh;
+  }
+
+  .about-us{
+    height: 50vh;
+  }
+
+  .images{
+    height: 50vh;
+  }
+
+  .img{
+    height: 50vh;
+    animation-duration: 1s;
+  }
+
+  .img2{
+    height: 50vh;;
+    animation-duration: 1.4s;
+  }
+
+  .text{
+    margin-left: 6vw;
+  }
+
+  .title{
+    font-size: 1.5em;
+  }
+
+  .writing{
+    font-size: 2.4em;
+  }
+
+  .mis{
+    height: fit-content;
+    width: fit-content;
+    margin-top: 4vh;
+  }
+
+  .mis-header{
+    font-size: 1em;
+    top:10vh;
+  }
+
+  .mis-writing{
+    font-size: 0.5em;
+  }
+
+  .mis-body{
+    height: fit-content;
+    font-size:0.8em;
+  }
+
+  .vis{
+    height: fit-content;
+    width: fit-content;
+    margin-top: 4vh;
+  }
+
+  .vis-header{
+    font-size: 1em;
+    top:9vh;
+  }
+
+  .vis-writing{
+    font-size: 0.5em;
+  }
+
+  .vis-body{
+    
+    font-size:0.8em;
+  }
+
+  .pas{
+    height: fit-content;
+    width: fit-content;
+    margin-top: 4vh;
+  }
+
+  .pas-header{
+    font-size: 1em;
+  }
+
+  .pas-writing{
+    font-size: 0.5em;
+  }
+
+  .pas-body{
+    font-size:0.8em;
+  }
+
 }

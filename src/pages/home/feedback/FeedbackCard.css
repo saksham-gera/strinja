@@ -20,7 +20,7 @@
 }
 
 .name-icon {
-    font-size:x-large;
+    font-size: x-large;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,5 +32,31 @@
 
 .feedback-card h3{
     margin: 1rem 0;
+}
+
+@media (max-width: 600px) {
+    .feedback-card {
+        margin: 1vh 1vw;
+        width: 43vw;
+    }
+
+    .name-icon {
+        height: 1.5rem;
+        width: 1.5rem;
+        font-size: medium;
+    }
+
+    .feedback-text {
+        padding: 2vh 2vw;
+    }
+
+    .feedback-card h3{
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+
+    .review {
+        font-size: 1rem;
+    }
 }
 

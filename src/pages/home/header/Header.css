@@ -49,7 +49,33 @@
 }
 
 .header-subcontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1rem;
     margin: 0;
     padding: 0;
+}
+
+@media (max-width: 600px) {
+    .header {
+        display: flex;
+        height: 50vh;
+    }
+
+    .bg-gif {
+        height: 50vh;
+    }
+
+    .black-overlay {
+        height: 50vh;
+    }
+
+    .header-content{
+        font-size: 6rem;
+    }
+
+    .header-subcontent {
+        font-size: 0.7rem;
+    }
 }

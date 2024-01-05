@@ -30,7 +30,7 @@
 
 .contactus-quote {
     color: white;
-    font-size: 5rem;
+    font-size: 4.5rem;
     margin: 2rem;
 }
 
@@ -48,7 +48,17 @@
     color: white;
 }
 
-.social-icons NavButton :hover {
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+@media (max-width: 600px) {
+    .bg {
+        height: 50vh;
+    }
+    .contactus-quote {
+        font-size: 1.5rem;
+    }
+    .container-full {
+        height: 50vh;
+    }
+    .contact-boxes {
+        margin-left: 1rem;
+    }
 }

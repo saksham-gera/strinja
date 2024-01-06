@@ -36,6 +36,10 @@
     width: 70vw;
 }
 
+.whatsapp-integration {
+    cursor: pointer;
+}
+
 .image-popup-image {
     width: 55%;
     border-radius: 1rem 0 0 1rem;

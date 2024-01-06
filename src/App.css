@@ -5,8 +5,24 @@
     margin: 0;
 }
 
-.lorem {
-    background-image: linear-gradient(to right,#e4ddd4,#8b7659);
+.app {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.login {    
+    position: fixed;
+    z-index: 15;
+}
+
+.owner-login-button {
+    position: fixed;
+    z-index: 12;
+    right: 1rem;
+    bottom: 0;
 }
 
 a{

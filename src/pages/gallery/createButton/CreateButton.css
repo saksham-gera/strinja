@@ -1,0 +1,40 @@
+.create-button {
+    border: black dotted 3px;
+    margin: 5vh 0;
+    width: 22vw;
+    border-radius: 1rem;
+    transition: all 0.7s;
+    cursor: pointer;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.create-button:hover {
+    transform: scale(1.1);
+}
+
+.create-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    width: 100%;
+    
+    background-size: contain;
+    color: white;
+}
+
+.create-button img {
+    height: 20vh;
+    width: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 600px) {
+    .create-button {
+        width: 80vw;
+    }
+}

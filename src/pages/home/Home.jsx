@@ -4,14 +4,13 @@ import "./Home.css";
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import Footer from '../../components/Footer';
 import FeedbackComponent from './feedback/FeedbackComponent';
-
 import { useMediaQuery } from 'react-responsive'
 
 export default function Home() {
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 600px)' });
     return (
-        <div className='home'>
-            <Parallax pages={isTabletOrMobile ? 3 : 5.25} style={{ backgroundAttachment: "fixed", backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover", backgroundImage: "url('./assets/achievement-bg.jpg')" }}>
+        <div className="home">
+            <Parallax pages={isTabletOrMobile ? 3 : 5.32} style={{ backgroundAttachment: "fixed", backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover", backgroundImage: "url('./assets/achievement-bg.jpg')" }}>
                 <ParallaxLayer factor={isTabletOrMobile ? 1.5 : 3} style={{ backgroundColor: "#eacaa8" }}>
 
 

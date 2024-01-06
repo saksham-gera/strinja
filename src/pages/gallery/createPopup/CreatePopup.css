@@ -1,0 +1,80 @@
+.create-image-popup {
+    display: flex;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.popup-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 1rem;
+    width: 80%;
+}
+
+.overlay-custom-class {
+    background-color: black;
+    color: black;
+}
+
+.create-image-popup-details textarea {
+    height: 10vh;
+}
+
+.create-image-popup-details form {
+    margin: 5rem 0;
+}
+
+.close-button {
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.create-image-popup-black-overlay {
+    z-index: 11;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    opacity: 60%;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+.create-image-popup-container {
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 12;
+    height: 70vh;
+    width: 70vw;
+}
+
+
+.create-image-popup-details {
+    padding: 1rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.create-image-popup-details-title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.create-image-popup-details-description {
+    font-size: 1rem;
+    margin: 2rem 0;
+}

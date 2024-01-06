@@ -15,7 +15,7 @@ export default function GalleryCard({ title, description , bgImg, func}) {
       }}
       onMouseLeave={() => { setTextVisibility("hidden") }}
       style={{ backgroundImage: `url("${bgImg}")`, backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "contain" }}>
-      <div className="gallery-overlay-text" style={{ visibility: TextVisibility }}>
+      <div className="gallery-overlay" style={{ visibility: TextVisibility }}>
         <img src={bgImg}></img>
       </div>
     </div>

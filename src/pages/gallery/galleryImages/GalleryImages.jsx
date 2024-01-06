@@ -1,8 +1,9 @@
 import GalleryCard from "../GalleryCard";
+import CreateButton from "../createButton/CreateButton";
 import "./GalleryImages.css";
 import React from "react";
 
-export default function GalleryImages({ pictures,func }) {
+export default function GalleryImages({ pictures,func,funcCreate }) {
 
   const galleryCols1 = [];
   const galleryCols2 = [];
@@ -10,7 +11,7 @@ export default function GalleryImages({ pictures,func }) {
 
   console.log(pictures.length);
   let i = 0;
-
+  galleryCols1.push(<CreateButton func={funcCreate}/>);
   while (i < pictures.length) {
 
     galleryCols1.push(

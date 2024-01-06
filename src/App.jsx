@@ -1,3 +1,4 @@
+
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import ContactUs from './pages/contactUs/ContactUs.jsx';
@@ -12,12 +13,12 @@ import CreatePopup from './pages/gallery/createPopup/CreatePopup.jsx';
 
 
 function App() {
-
   const [LoginDisplay, setLoginDisplay] = useState("none");
 
   const login = (loginDisplay) => {
     setLoginDisplay(loginDisplay);
   }
+  
   return (
     <div className="app">
       <div className="login" style={{ display: LoginDisplay }}>
@@ -25,7 +26,6 @@ function App() {
       </div>
       <div className="route-container">
         <Routes>
-          <Route path='/trial' element={<CreatePopup />}></Route>
           <Route path='/contactus' element={<ContactUs />}></Route>
           <Route path='/' element={<Home />}></Route>
           <Route path='/about' element={<Aboutus />}></Route>
@@ -38,4 +38,4 @@ function App() {
 
 }
 
-export default App
+export default App;

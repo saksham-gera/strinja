@@ -238,18 +238,6 @@
 
 @media (max-width: 600px)  {
 
-  .img {
-    width: 100%;
-  }
-
-  .img2 {
-    display: none;
-  }
-
-  .blur {
-    height: 50vh;
-  }
-
   .about-us{
     height: 50vh;
   }

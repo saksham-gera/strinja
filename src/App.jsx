@@ -1,3 +1,4 @@
+
 import './App.css';
 import { Route , Routes } from 'react-router-dom';
 import ContactUs from './pages/contactUs/ContactUs.jsx';
@@ -9,9 +10,9 @@ import ImagePopup from './pages/gallery/imagePopup/ImagePopup.jsx';
 
 
 function App() {
-  
   return (
-      <>
+
+    <>
         <Routes >
           <Route path='/' element={<Home />}></Route>
           <Route path='/contactus' element={<ContactUs />}></Route>
@@ -23,4 +24,4 @@ function App() {
 
 }
 
-export default App
+export default App;

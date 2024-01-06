@@ -43,7 +43,7 @@ export default function Gallery() {
         <Header />
 
         <div className="gallery-heading">Lets Have A Look!</div>
-        <GalleryImages func={popupData}/>
+        <GalleryImages func={popupData} pictures={pictures}/>
           
         <Footer />
     </div>

@@ -1,12 +1,14 @@
 import GalleryCard from "../GalleryCard";
+import CreateButton from "../createButton/CreateButton";
 import "./GalleryImages.css";
 import React from 'react'
 
-export default function GalleryImages({func}) {
+export default function GalleryImages({func, funcCreate}) {
   return (
     <div className="gallery-images">
         <div className="gallery-container">
             <div className="gallery-col">
+                <CreateButton func={funcCreate}/>
                 <GalleryCard title="first" bgImg="https://www.stonedsanta.in/wp-content/uploads/2019/06/Bicycle-String-Art.jpg" func = {func}/>
                 <GalleryCard title="second" bgImg="https://i.etsystatic.com/26434996/r/il/307255/3783701493/il_fullxfull.3783701493_8hbr.jpg" func = {func}/>
                 <GalleryCard title="third" bgImg="https://kreateworld.in/cdn/shop/products/7839a190-6424-43a5-8b23-011a489205a2_1000x.png?v=1673431197" func = {func}/>

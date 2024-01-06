@@ -6,7 +6,7 @@ import NavBar from '../../components/navBar/NavBar';
 
 export default function Aboutus() {
   return (
-    <>
+    <div className='about-us-main'>
       <div className="about-us"> 
           <div className="bg-color"></div>
           <div className="images">
@@ -69,6 +69,6 @@ export default function Aboutus() {
         </div>
           
        <Footer/>
-      </>
+      </div>
   );
 }

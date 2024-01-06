@@ -2,7 +2,7 @@ import GalleryCard from "../GalleryCard";
 import "./GalleryImages.css";
 import React from "react";
 
-export default function GalleryImages({ pictures }) {
+export default function GalleryImages({ pictures,func }) {
 
   const galleryCols1 = [];
   const galleryCols2 = [];
@@ -14,14 +14,14 @@ export default function GalleryImages({ pictures }) {
   while (i < pictures.length) {
 
     galleryCols1.push(
-        <GalleryCard title={pictures[i].Title} bgImg={pictures[i].Url func = {func}} />
+        <GalleryCard title={pictures[i].Title} bgImg={pictures[i].Url} func = {func} />
     );
     i++;
 
     if(i >= pictures.length) break;
 
     galleryCols2.push(
-        <GalleryCard title={pictures[i].Title} bgImg={pictures[i].Url func = {func}} />
+        <GalleryCard title={pictures[i].Title} bgImg={pictures[i].Url} func = {func} />
     );
     i++;
 
@@ -29,7 +29,7 @@ export default function GalleryImages({ pictures }) {
     
 
     galleryCols3.push(
-        <GalleryCard title={pictures[i].Title} bgImg={pictures[i].Url func = {func}} />
+        <GalleryCard title={pictures[i].Title} bgImg={pictures[i].Url} func = {func} />
     );
     i++;
   }

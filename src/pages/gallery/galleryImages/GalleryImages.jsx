@@ -14,14 +14,14 @@ export default function GalleryImages({ pictures }) {
   while (i < pictures.length) {
 
     galleryCols1.push(
-        <GalleryCard title={pictures[i].Title} bgImg={pictures[i].Url} />
+        <GalleryCard title={pictures[i].Title} bgImg={pictures[i].Url func = {func}} />
     );
     i++;
 
     if(i >= pictures.length) break;
 
     galleryCols2.push(
-        <GalleryCard title={pictures[i].Title} bgImg={pictures[i].Url} />
+        <GalleryCard title={pictures[i].Title} bgImg={pictures[i].Url func = {func}} />
     );
     i++;
 
@@ -29,7 +29,7 @@ export default function GalleryImages({ pictures }) {
     
 
     galleryCols3.push(
-        <GalleryCard title={pictures[i].Title} bgImg={pictures[i].Url} />
+        <GalleryCard title={pictures[i].Title} bgImg={pictures[i].Url func = {func}} />
     );
     i++;
   }
@@ -40,13 +40,13 @@ export default function GalleryImages({ pictures }) {
         
       <div className="gallery-col">
          {galleryCols1}
-        </div>
-        <div className="gallery-col">
+       </div>
+       <div className="gallery-col">
          {galleryCols2}
-        </div>
-        <div className="gallery-col">
+       </div>
+       <div className="gallery-col">
          {galleryCols3}
-        </div>
+       </div>
 
       </div>
     </div>

@@ -4,15 +4,14 @@
     position: relative;
     background-color: #e4cdb4;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
-
 
 .write-to-us-sticky {
     height: 70vh;
     position: -webkit-sticky;
-    position:sticky;
+    position: sticky;
     top: 0;
     width: 30vw;
 }
@@ -34,4 +33,20 @@
 
 .write-to-us-form input {
     width: 40vw;
+}
+
+@media (max-width: 600px) {
+    .write-to-us-sticky {
+        height: 40vh;
+    }
+    .write-to-us {
+        height: 50vh;
+    }
+    .heading {
+        font-size: 2rem;
+    }
+    .description {
+        padding-right: 3rem;
+        font-size: 0.75rem;
+    }
 }

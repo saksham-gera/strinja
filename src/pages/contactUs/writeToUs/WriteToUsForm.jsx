@@ -10,7 +10,7 @@ export default function WriteToUsForm({title}) {
         <WriteToUsInput title="Your email address" id="email"/>
         <WriteToUsInput title="Your phone number" id="phone"/>
         <WriteToUsInput title="Your company" id="company"/>
-        <label htmlFor="help">How can we help you?</label>
+        <label className="help" htmlFor="help">How can we help you?</label>
         <textarea id="help" className="form-control"></textarea>
     </div>
   )

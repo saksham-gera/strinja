@@ -10,7 +10,7 @@
     transform: scale(1.1);
 }
 
-.gallery-text {
+.gallery-overlay-text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,3 +36,8 @@
     padding: 0;
 }
 
+@media (max-width: 600px) {
+    .gallery-card {
+        width: 80vw;
+    }
+}

@@ -10,6 +10,7 @@ export default function Login({ func }) {
         func("none");
       }}></div>
       <div className="login-container">
+        <div className="blur-bg"></div>
         <div className="close-button" onClick={() => {
           func("none");
         }}>

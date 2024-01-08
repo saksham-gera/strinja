@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import "./Typewriter.css";
 
 const Typewriter = ({ text, delay }) => {
   const [currentText, setCurrentText] = useState('');

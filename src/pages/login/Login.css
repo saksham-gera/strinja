@@ -124,3 +124,19 @@
 .login-container .btn {
     margin: 2.5vh 0;
 }
+
+@media (max-width: 600px) {
+
+    .login-container {
+        height: 50vh;
+        padding: 1rem;
+    }
+
+    .login-container h1 {
+        font-size: 1rem;
+    }
+
+    .login-popup-details {
+        padding: 0;
+    }
+}

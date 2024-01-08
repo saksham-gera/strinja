@@ -8,11 +8,12 @@ export default function CreatePopup({displayFunc }) {
                         displayFunc("none");
                     }}></div>
             <div className="create-image-popup-container">
+                <div className="blur-bg"></div>
                 <div className="create-image-popup-details">
                     <h3>Here You Can Create A New Creativity To Gallery</h3>
                     <div className="close-button" onClick={() => {
                         displayFunc("none");
-                    }}><CloseRoundedIcon fontSize="medium" style={{color:"black"}}/></div>
+                    }}><CloseRoundedIcon fontSize="medium" style={{color:"white"}}/></div>
                     <form>
                     <input placeholder="Write A Catchy title!" className="form-control create-image-popup-details-title">
                         

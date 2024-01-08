@@ -7,7 +7,7 @@ export default function ImagePopup({ imageUrl, title, description, displayFunc }
     number = number?.replace(/[^\w\s]/gi, '').replace(/ /g, '');
     const URL = "https://wa.me";
     let url = `${URL}/${number}`;
-    let message = `Hi Artist, I'm Interested In Buying This ${title} Article, I Do Have Some Queries Regarding The Article`;
+    let message = `https://instagram.com Hi Artist, I'm Interested In Buying This ${title} Article, I Do Have Some Queries Regarding The Article`;
     url += `?text=${encodeURI(message)}`;
 
     return (

@@ -11,7 +11,7 @@ export default function Home() {
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 600px)' });
     return (
         <div className="home">
-            <Parallax pages={isTabletOrMobile ? 3 : 5.32} style={{ backgroundAttachment: "fixed", backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover", backgroundImage: "url('./assets/achievement-bg.jpg')" }}>
+            <Parallax pages={isTabletOrMobile ? 3 : 5.23} style={{ backgroundAttachment: "fixed", backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover", backgroundImage: "url('./assets/achievement-bg.jpg')" }}>
                 <ParallaxLayer factor={isTabletOrMobile ? 1.5 : 3} style={{ backgroundColor: "#eacaa8" }}>
 
                 </ParallaxLayer>

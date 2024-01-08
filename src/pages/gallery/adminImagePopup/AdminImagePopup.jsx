@@ -28,10 +28,10 @@ export default function AdminImagePopup({ imageUrl, title, description, displayF
                     <input value={title} className="form-control admin-image-popup-details-title">
                         
                     </input>
-                    <input placeholder="Enter New Image URL" className="form-control admin-image-popup-details-description">
+                    <input value={imageUrl} placeholder="Enter New Image URL" className="form-control admin-image-popup-details-description">
                         
                     </input>
-                    <textarea value={description} className="form-control admin-image-popup-details-description">
+                    <textarea value={description} placeholder="Enter New Description" className="form-control admin-image-popup-details-description">
 
                     </textarea>
                     <div className="popup-buttons">

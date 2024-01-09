@@ -9,18 +9,21 @@ import Login from './pages/login/Login.jsx';
 import { useState } from 'react';
 import AdminImagePopup from './pages/gallery/adminImagePopup/AdminImagePopup.jsx';
 import CreatePopup from './pages/gallery/createPopup/CreatePopup.jsx';
-import { AuthProvider } from './Authorization/AuthContext.jsx';
-
+import { AuthProvider , useAuth } from './Authorization/AuthContext.jsx';
 
 function App() {
+  const {isLoggedIn } = useAuth();
+
   const [LoginDisplay, setLoginDisplay] = useState("none");
 
   const login = (loginDisplay) => {
     setLoginDisplay(loginDisplay);
   }
-  
+
+  const loginLogout = isLoggedIn() ? <button className='btn btn-danger owner-login-button' onClick={() => {window.location.reload()}}>Logout</button> : <button className='btn btn-secondary owner-login-button' onClick={() => { login("flex") }}>Owner Login </button>;
+
   return (
-    <AuthProvider>
+    
     <div className="app">
       <div className="login" style={{ display: LoginDisplay }}>
         <Login func={login} />
@@ -33,9 +36,8 @@ function App() {
           <Route path='/gallery' element={<Gallery />}></Route>
         </Routes>
       </div>
-      <button className='btn btn-secondary owner-login-button' onClick={() => { login("flex") }}>Owner Login </button>
+      {loginLogout}
     </div>
-    </AuthProvider>
   );
 
 }

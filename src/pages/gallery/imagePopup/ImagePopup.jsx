@@ -27,7 +27,7 @@ export default function ImagePopup({ imageUrl, title, description, displayFunc }
                         {title}
                     </div>
                     <div className="image-popup-details-description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores tempora quibusdam quas cupiditate, odit aperiam debitis voluptatum incidunt nesciunt cumque. Facilis voluptates aliquam eveniet quo saepe! Eaque, totam odit eligendi architecto, quaerat dignissimos dolore sed at atque autem veritatis vel libero error numquam nisi est in facilis! Porro, omnis beatae?
+                        {description}
                     </div>
                     <div className="whatsapp-integration">
                         <a href={url}>

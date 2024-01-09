@@ -7,6 +7,29 @@ import (
 )
 
 
+func (h handler) VerifyUser(c *gin.Context) {
+	var userCredentials model.Admin
+
+	if err := c.ShouldBindJSON(&userCredentials); err != nil {
+		c.JSON(400, gin.H{"error": err.Error()})
+		return
+	}
+
+	// Find the user by username
+	var storedUser model.Admin
+	if err := h.DB.Where("username = ?", userCredentials.Username).First(&storedUser).Error; err != nil {
+		c.JSON(404, gin.H{"error": "User not found"})
+		return
+	}
+
+	// Verify the password
+	if err := model.VerifyPassword(storedUser.Password, userCredentials.Password); err != nil {
+		c.JSON(401, gin.H{"error": "Invalid credentials"})
+		return
+	}
+
+	c.JSON(200, gin.H{"message": "User verified successfully", "user": storedUser})
+}
 
 func (h handler) CreateUser(c *gin.Context) {
 	var user model.Admin

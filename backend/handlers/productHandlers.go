@@ -48,22 +48,28 @@ func (h handler) Add(c *gin.Context) {
 }
 
 func (h handler) Update(c *gin.Context) {
+	id := c.Param("id")
 
-	id:= c.Param(":id")
-
-	var picture model.Picture
-
-    if err := h.DB.First(&picture, id).Error; err != nil {
-        c.JSON(404, gin.H{"error": "Picture not found"})
-        return
-    }
-
-	if err:= h.DB.Save(&picture).Error; err!= nil{
-		c.JSON(500,gin.H{"error":"Failed to update user"})
+	// Retrieve the existing picture by ID
+	var existingPicture model.Picture
+	if err := h.DB.First(&existingPicture, id).Error; err != nil {
+		c.JSON(404, gin.H{"error": "Picture not found"})
 		return
 	}
-	c.JSON(201, gin.H{"message": "User updated successfully", "art": picture})
+
+	// Bind the updated fields from the request body
+	var updatedFields map[string]interface{}
+	if err := c.ShouldBindJSON(&updatedFields); err != nil {
+		c.JSON(400, gin.H{"error": "Invalid request body"})
+		return
+	}
+
+	// Update the existing picture with the provided fields
+	h.DB.Model(&existingPicture).Updates(updatedFields)
+
+	c.JSON(200, gin.H{"message": "Picture updated successfully", "art": existingPicture})
 }
+
 
 
 func (h handler) Delete(c *gin.Context) {

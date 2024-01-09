@@ -38,7 +38,7 @@ export default function AdminImagePopup({
       if (response.ok) {
         console.log("Success:", response);
         displayFunc("none");
-        window.location.reload();
+        refetch();
       } else {
         console.log("Error:", response);
       }

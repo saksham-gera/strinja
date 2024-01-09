@@ -9,7 +9,7 @@ import Login from './pages/login/Login.jsx';
 import { useState } from 'react';
 import AdminImagePopup from './pages/gallery/adminImagePopup/AdminImagePopup.jsx';
 import CreatePopup from './pages/gallery/createPopup/CreatePopup.jsx';
-
+import { AuthProvider } from './Authorization/AuthContext.jsx';
 
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
   }
   
   return (
+    <AuthProvider>
     <div className="app">
       <div className="login" style={{ display: LoginDisplay }}>
         <Login func={login} />
@@ -34,6 +35,7 @@ function App() {
       </div>
       <button className='btn btn-secondary owner-login-button' onClick={() => { login("flex") }}>Owner Login </button>
     </div>
+    </AuthProvider>
   );
 
 }

@@ -36,14 +36,13 @@ export default function Gallery() {
     setImgPopupDisplay(dis);
   }
 
-  const fetch = () => {
+  const refetch = () => {
     fetch('http://localhost:6969/Pictures')  // Replace with your actual endpoint
     .then(response => response.json())
     .then(data => setPictures(data))
     .then(console.log(pictures))
     .catch(error => console.error(error));
-}, []
-  }
+}
 
   const displayFuncImg = (display) => {
     setImgPopupDisplay(display)
@@ -65,7 +64,7 @@ export default function Gallery() {
         <Header />
 
         <div className="gallery-heading">Lets Have A Look!</div>
-        <GalleryImages func={popupData} funcCreate={displayFuncCreate} pictures={pictures} refetch={fetch} />
+        <GalleryImages func={popupData} funcCreate={displayFuncCreate} pictures={pictures} refetch={refetch} />
         <Footer />
     </div>
   )

@@ -3,7 +3,7 @@ package main
 import (
 	"backend/config"
 	"backend/handlers"
-	"backend/middleware"
+	// "backend/middleware"
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-contrib/static"
@@ -26,19 +26,23 @@ func main() {
 
 	r.GET("/Pictures", h.GetAll)
 	r.GET("/Picture/:id", h.Get)
-	r.POST("/Add", h.CreateUser)
-	r.GET("/Admins",h.GetAllUsers)
-	r.DELETE("/DeleteUser/:id",h.Delete)
+	r.POST("/AddUser", h.CreateUser)
+	r.GET("/Admins", h.GetAllUsers)
+	r.DELETE("/DeleteUser/:id", h.Delete)
+	r.POST("/Add", h.Add)
+	r.PUT("/Edit/:id", h.Update)
+	r.DELETE("/Delete/:id", h.Delete)
+	r.POST("/Admin", h.VerifyUser)
 
-	authGroup := r.Group("/admin")
-	authGroup.Use(middleware.AuthMiddleware(DB))
+	// authGroup := r.Group("/Admin")
+	// authGroup.Use(middleware.AuthMiddleware(DB))
 
-	{
-		authGroup.POST("/Add", h.Add)
-		authGroup.PUT("/Edit/:id", h.Update)
-		authGroup.DELETE("/Delete/:id", h.Delete)
+	// {
+	// 	// authGroup.POST("/Add", h.Add)
+	// 	// authGroup.PUT("/Edit/:id", h.Update)
+	// 	authGroup.DELETE("/Delete/:id", h.Delete)
 
-	}
+	// }
 
 	r.Run(":6969")
 

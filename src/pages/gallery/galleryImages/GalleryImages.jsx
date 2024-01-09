@@ -2,27 +2,34 @@ import GalleryCard from "../GalleryCard";
 import CreateButton from "../createButton/CreateButton";
 import "./GalleryImages.css";
 import React from "react";
+import { useAuth } from "../../../Authorization/AuthContext";
+import { DescriptionOutlined } from "@mui/icons-material";
 
-export default function GalleryImages({ pictures,func,funcCreate }) {
-
+export default function GalleryImages({ pictures,func,funcCreate,refetch }) {
+  const {isLoggedIn } = useAuth();
   const galleryCols1 = [];
   const galleryCols2 = [];
   const galleryCols3 = [];
 
+
+
   console.log(pictures.length);
   let i = 0;
-  galleryCols1.push(<CreateButton func={funcCreate}/>);
-  while (i < pictures.length) {
+  if(isLoggedIn()) {
+    galleryCols1.push(<CreateButton func={funcCreate}/>);
+  }
 
-    galleryCols1.push(
-        <GalleryCard title={pictures[i].Title} bgImg={pictures[i].Url} func = {func} />
-    );
+  while (i < pictures.length) {
+      galleryCols1.push(
+        <GalleryCard Id = {pictures[i].Id} title={pictures[i].Title} bgImg={pictures[i].Url} description={pictures[i].Description} func = {func} />
+      );
     i++;
+    
 
     if(i >= pictures.length) break;
 
     galleryCols2.push(
-        <GalleryCard title={pictures[i].Title} bgImg={pictures[i].Url} func = {func} />
+        <GalleryCard Id = {pictures[i].Id} title={pictures[i].Title} bgImg={pictures[i].Url} description={pictures[i].Description} func = {func} />
     );
     i++;
 
@@ -30,10 +37,12 @@ export default function GalleryImages({ pictures,func,funcCreate }) {
     
 
     galleryCols3.push(
-        <GalleryCard title={pictures[i].Title} bgImg={pictures[i].Url} func = {func} />
+        <GalleryCard Id = {pictures[i].Id} title={pictures[i].Title} bgImg={pictures[i].Url} description={pictures[i].Description} func = {func} refetch={refetch} />
     );
     i++;
   }
+
+  
 
   return (
     <div className="gallery-images">

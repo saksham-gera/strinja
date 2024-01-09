@@ -2,13 +2,13 @@ import "./GalleryCard.css";
 import React, { useState } from 'react'
 
 
-export default function GalleryCard({ title, description , bgImg, func}) {
+export default function GalleryCard({ Id, title, description , bgImg, func,refetch}) {
   const [TextVisibility, setTextVisibility] = useState("hidden");
 
   return (
     <div className="gallery-card"
       onClick={() => {
-        func(bgImg,title,"flex")
+        func(bgImg,title,Id,description,"flex")
       }}
       onMouseOver={() => {
         setTextVisibility("visible")

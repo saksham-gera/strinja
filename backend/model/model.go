@@ -7,6 +7,7 @@ type Picture struct {
 	Id   int    `gorm:"type:int;primary_key"`
 	Title string `gorm:"type:varchar(255)"`
 	Url string  `gorm:"type:varchar(255)"`
+	Description string `gorm:"type:varchar(255)"`
 	
 }
 

@@ -5,14 +5,14 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import Footer from '../../components/Footer';
 import FeedbackComponent from './feedback/FeedbackComponent';
 import { useMediaQuery } from 'react-responsive'
+import Typewriter from '../../components/typewriter/Typewriter';
 
 export default function Home() {
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 600px)' });
     return (
         <div className="home">
-            <Parallax pages={isTabletOrMobile ? 3 : 5.32} style={{ backgroundAttachment: "fixed", backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover", backgroundImage: "url('./assets/achievement-bg.jpg')" }}>
+            <Parallax pages={isTabletOrMobile ? 3 : 5.23} style={{ backgroundAttachment: "fixed", backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover", backgroundImage: "url('./assets/achievement-bg.jpg')" }}>
                 <ParallaxLayer factor={isTabletOrMobile ? 1.5 : 3} style={{ backgroundColor: "#eacaa8" }}>
-
 
                 </ParallaxLayer>
                 <ParallaxLayer>
@@ -32,19 +32,18 @@ export default function Home() {
                     </div>
 
                 </ParallaxLayer>
-
                 
                 <ParallaxLayer offset={isTabletOrMobile ? 0.5 : 1} speed={isTabletOrMobile ? 0.0 : 0.2} style={{ height: isTabletOrMobile ? "100vh" : "200vh", width: "100vw" }}>
                     <div className="textLayer">
                         <div className="div1">
-                            The concept of string art revolves around simple tools like a wooden board or a canvas, thread and nails.
-                            <br /><br /><br />
-                            Mary Everest Boole introduced String art in the 19th Century as a way to teach kids more about maths and mathematical formulas.
+                            <h3>SAGA of Strings</h3>
+                            <Typewriter text="String art is a creative craft that involves arranging and connecting colored threads or strings between fixed points to create visually appealing geometric patterns or images.Mary Everest Boole introduced String art in the 19th Century 
+                        " delay="40" />
                         </div>
                         <div className="div4">
-                            Each string of art creates thousands of memories, these arts are generally made by unemployed, uneducated women in rural and urban areas with the help of some engineers.
-                            <br /><br /><br />
-                            Each customer is helping in women empowerment.
+                            <h3>Idolization of Strings</h3>
+                            <Typewriter text="While string art has historical roots, it has found a place in contemporary art and crafts. Our Artists continue to explore new and innovative ways to use strings and threads in their creations. Each string of art creates thousands of memories. 
+                            " delay="40" />
                         </div>
                     </div>
                 </ParallaxLayer>

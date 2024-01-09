@@ -7,6 +7,7 @@ export default function CreatePopup({ displayFunc }) {
   const [title, setTitle] = useState();
   const [imageUrl, setImageUrl] = useState();
   const [description, setDescription] = useState();
+export default function CreatePopup({displayFunc }) {
 
   const handleSave = async () => {
     try {

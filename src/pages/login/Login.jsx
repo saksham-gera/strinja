@@ -17,17 +17,13 @@ export default function Login({ func }) {
   }
 
   return (
-    <div className="login-popup">
-      <div
-        className="login-popup-black-overlay"
-        onClick={() => {
-          func("none");
-        }}
-      ></div>
+    <div className="login-popup" >
+      <div className="login-popup-black-overlay" onClick={() => {
+        func("none");
+      }}></div>
       <div className="login-container">
-        <div
-          className="close-button"
-          onClick={() => {
+        <div className="blur-bg"></div>
+        <div className="close-button" onClick={() => {
             func("none");
           }}
         >

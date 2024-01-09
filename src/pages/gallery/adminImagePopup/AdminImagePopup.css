@@ -80,3 +80,40 @@
     font-size: 1rem;
     margin: 2rem 0;
 }
+
+@media (max-width:600px) {
+
+    .admin-image-popup-container {
+        flex-direction: column;
+        height: 80vh;
+        width: 80vw;
+    }
+
+    .admin-image-popup-image {
+        width: 100%;
+        height: 45%;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .admin-image-popup-details {
+        width: 100%;
+    }
+
+    .admin-image-popup-details-title {
+        font-size: 1rem;
+    }
+
+    .admin-image-popup-details-description {
+        margin: 1rem 0;
+    }
+
+    .popup-buttons {
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .spacer {
+        width: 0;
+    }
+}
